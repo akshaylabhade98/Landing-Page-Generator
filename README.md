@@ -50,25 +50,68 @@ Landing-page-generator/
 ├── README.md
 ```
 
-⚙️ Setup Instructions
-Clone or Download the Repo
-```bash
-git clone https://github.com/yourusername/landing-page-generator.git
-```
-Place It on a PHP Server
-Upload to Apache/Nginx web root or run using PHP's built-in server:
-```bash
-php -S localhost:8000
-```
-Make Directories Writable
-```bash
-chmod -R 755 assets/ campaigns/ logo/
+
+---
+
+## 🔐 Configuration – `important.php`
+
+The `important.php` file allows you to customize application behavior without editing the core logic.
+
+```php
+<?php
+$users = [
+    "akshay" => "Aksh@y9850",
+    "admin" => "Aksh@y9850"
+];
+
+$base_url = "http://localhost/IMP/Page_Generator";
+
+$Privacy_Policy_link = "#";
+$Unsubscribe_link = "#";
+$Company_name = "Company name";
+?>
 ```
 
-Access via Browser
+---
 
-http://localhost:8000/
+Variable	Purpose
 
+$users	Associative array of usernames and passwords
+
+$base_url	Root path of the app used for redirects and links
+
+$Privacy_Policy_link	Default link in generated email templates
+
+$Unsubscribe_link	Optional unsubscribe link (used in email footers)
+
+$Company_name	Default company name used in templates
+
+🛡️ Note: Never upload this file to a public repository with real credentials.
+
+---
+
+🚀 How to Run Locally
+
+Clone or download the repo
+
+Place it in your htdocs if using XAMPP/WAMP
+
+Navigate to http://localhost/IMP/Page_Generator/login.php
+
+Login with credentials from important.php
+
+Start uploading logos, assets, and generate campaigns
+
+---
+
+📥 File Upload Rules
+Allowed formats: PNG, SVG
+
+Max file size: 2MB
+
+Duplicate filenames will trigger an alert
+
+---
 
 💡 Future Enhancements
 
@@ -76,6 +119,13 @@ Drag & Drop upload
 
 Campaign preview editor with templates
 
+---
+
+📜 License
+
+This project is open for educational and private use only. For commercial use, please contact the author.
+
+---
 
 🧑‍💻 Author
 
