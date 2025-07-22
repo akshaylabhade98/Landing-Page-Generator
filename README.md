@@ -52,25 +52,31 @@ Landing-page-generator/
 
 ⚙️ Setup Instructions
 Clone or Download the Repo
-
+```bash
 git clone https://github.com/yourusername/landing-page-generator.git
-
+```
 Place It on a PHP Server
 Upload to Apache/Nginx web root or run using PHP's built-in server:
+```bash
 php -S localhost:8000
-
+```
 Make Directories Writable
+```bash
 chmod -R 755 assets/ campaigns/ logo/
+```
 
 Access via Browser
+
 http://localhost:8000/
 
 
 💡 Future Enhancements
+
 Drag & Drop upload
 Campaign preview editor with templates
 
 
 🧑‍💻 Author
+
 Akshay Labhade
 📧 akshaylabhade98@gmail.com
