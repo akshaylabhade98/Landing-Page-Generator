@@ -7,10 +7,11 @@ $users = [
   ];
 // Base URL for the application
 // Adjust this according to your server setup
-$base_url = "http://localhost/IMP/Page_Generator";
+$base_url = "https://landing-page-generator.sahilaptops.in";
 
 $Privacy_Policy_link = "#";
 $Unsubscribe_link = "#";
-$Company_name = "Company name"
+$Company_name = "SahiLaptops.in"
+
 
 ?>
