@@ -2,7 +2,7 @@
 // Important configurations and variables
 // Define users and passwords for login
 $users = [
-    "admin" => "Aksh@y9850"
+    "admin" => "Admin@123"
   ];
 // Base URL for the application
 // Adjust this according to your server setup
@@ -14,4 +14,5 @@ $Company_name = "SahiLaptops.in"
 
 
 ?>
+
 
