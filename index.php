@@ -65,7 +65,7 @@ include "protect.php";
           </div>
           <div class="row">
             <div class="col">
-              <p class="mt-5 mb-3 text-muted text-center">&copy; <?php echo date("Y") ?> Arkentech Solutions</p>
+              <p class="mt-5 mb-3 text-muted text-center">&copy; <?php echo date("Y") ?> <?php echo $Company_name ?></p>
             </div>
           </div>
         </div>
@@ -86,5 +86,6 @@ include "protect.php";
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
     -->
 </body>
+
 
 </html>
