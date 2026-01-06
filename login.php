@@ -1,5 +1,6 @@
 <?php
 require "check.php";
+include "important.php";
 ?>
 
 <!doctype html>
@@ -86,7 +87,8 @@ require "check.php";
     <?php if (isset($failed)) { ?>
       <div class="text-center" id="bad-login">Invalid User or Password.</div>
     <?php } ?>
-    <p class="mt-5 mb-3 text-muted text-center">&copy; <?php echo date("Y") ?> Arkentech Solutions</p>
+    <p>Use these user details (User = Admin Password = Admin@123)</p>
+    <p class="mt-5 mb-3 text-muted text-center">&copy; <?php echo date("Y") ?> <?php echo $Company_name ?></p>
   </form>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -96,4 +98,5 @@ require "check.php";
 
 </html>
 <!DOCTYPE html>
+
 <html>
